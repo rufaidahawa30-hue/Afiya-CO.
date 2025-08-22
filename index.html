@@ -1,0 +1,129 @@
+
+<!doctype html><html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afiya&Co — Fairy, Nature & Rose Gold</title>
+<link rel="icon" href="assets/img/favicon.ico">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<header>
+  <div class="brand">
+    <img class="logo" src="assets/img/logo.webp" alt="Afiya Logo">
+    <img class="word" src="assets/svg/logo-word.svg" alt="Afiya&Co.">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jewelry.html">Jewelry</a>
+    <a href="flowers.html">Flowers & Gifts</a>
+    <a href="fashion.html">Fashion</a>
+    <a href="javascript:void(0)" id="drawerOpen">Cart</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Welcome to Afiya&Co.</h1>
+    <p>Elegan, mewah, dan aesthetic dengan sentuhan <em>fairy & nature</em>. Pilih koleksimu: perhiasan, bunga & hampers, atau fashion modest premium.</p>
+    <a class="btn" href="jewelry.html">Belanja Sekarang</a>
+    <div class="address"><span class="badge">📍 Alamat:</span>
+      <a href="https://maps.google.com/?q=Jl.+Bougenvil+No.15,+Jakarta" target="_blank">jl. bougenvil no.15, jakarta</a>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <h2 class="section-title">Terlaris Minggu Ini</h2>
+  <div class="scroller">
+    
+    <article class="card" data-product data-id="j1" data-name="Bracelet Watch Mix" data-price="399000" data-img="assets/img/watch_mixed.webp">
+      <img src="assets/img/watch_mixed.webp" loading="lazy" alt="Bracelet Watch Mix">
+      <div class="info">
+        <div><strong>Bracelet Watch Mix</strong></div>
+        <small class="muted">Jam gelang rose & charms</small>
+        <div class="price">Rp 399,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    
+    <article class="card" data-product data-id="j2" data-name="Birthstone Pendant" data-price="299000" data-img="assets/img/jewel_balance.webp">
+      <img src="assets/img/jewel_balance.webp" loading="lazy" alt="Birthstone Pendant">
+      <div class="info">
+        <div><strong>Birthstone Pendant</strong></div>
+        <small class="muted">Kalung batu kelahiran</small>
+        <div class="price">Rp 299,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    
+    <article class="card" data-product data-id="f1" data-name="Bouquet Pastel" data-price="459000" data-img="assets/img/bouquet_colorful.webp">
+      <img src="assets/img/bouquet_colorful.webp" loading="lazy" alt="Bouquet Pastel">
+      <div class="info">
+        <div><strong>Bouquet Pastel</strong></div>
+        <small class="muted">Keranjang bunga pastel</small>
+        <div class="price">Rp 459,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    
+    <article class="card" data-product data-id="g1" data-name="Pink Bouquet" data-price="259000" data-img="assets/img/bouquet_pink.webp">
+      <img src="assets/img/bouquet_pink.webp" loading="lazy" alt="Pink Bouquet">
+      <div class="info">
+        <div><strong>Pink Bouquet</strong></div>
+        <small class="muted">Bouquet mawar pink</small>
+        <div class="price">Rp 259,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    
+    <article class="card" data-product data-id="fa1" data-name="Kaliana Vest" data-price="549000" data-img="assets/img/dress_vest.webp">
+      <img src="assets/img/dress_vest.webp" loading="lazy" alt="Kaliana Vest">
+      <div class="info">
+        <div><strong>Kaliana Vest</strong></div>
+        <small class="muted">Vest premium Kaliana</small>
+        <div class="price">Rp 549,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+  </div>
+
+  <h2 class="section-title">Testimoni</h2>
+  <blockquote class="testi">
+    “Packaging cantik banget, vibes fairy dream! Bunga fresh semua 🌸.” — <strong>Nadia</strong>
+  </blockquote>
+  <blockquote class="testi">
+    “Checkout WA super gampang. Vestenya mewah dan nyaman dipakai.” — <strong>Rani</strong>
+  </blockquote>
+
+  <h2 class="section-title">Kritik & Saran</h2>
+  <form id="feedbackForm">
+    <input name="name" placeholder="Nama kamu" required style="width:100%;padding:.7rem;border-radius:12px;border:1px solid #efd7dc;margin:.4rem 0">
+    <textarea name="message" rows="4" placeholder="Tulis pesan..." required style="width:100%;padding:.7rem;border-radius:12px;border:1px solid #efd7dc;margin:.4rem 0"></textarea>
+    <button class="btn" type="submit">Kirim via Email</button>
+  </form>
+</div>
+
+<div class="drawer">
+  <button id="drawerClose" class="btn" style="float:right">Tutup</button>
+  <h3>Keranjang</h3>
+  <div id="cartItems"></div>
+  <div class="cart-footer">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <strong>Total</strong>
+      <strong id="cartTotal">Rp 0</strong>
+    </div>
+    <button class="btn" style="width:100%;margin-top:.6rem" onclick="checkoutWA()">Checkout via WhatsApp</button>
+  </div>
+</div>
+
+<footer class="container">
+  <div class="address"><span class="badge">📍</span> <a target="_blank" href="https://maps.google.com/?q=Jl.+Bougenvil+No.15,+Jakarta">jl. bougenvil no.15, jakarta</a></div>
+  <small class="muted">© 2025 Afiya&Co.</small>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body></html>

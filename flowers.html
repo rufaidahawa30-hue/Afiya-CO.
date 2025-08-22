@@ -1,0 +1,94 @@
+<!doctype html><html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flowers & Gifts — Afiya&Co</title>
+<link rel="icon" href="assets/img/favicon.ico">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<header>
+  <div class="brand">
+    <img class="logo" src="assets/img/logo.webp" alt="Afiya Logo">
+    <img class="word" src="assets/svg/logo-word.svg" alt="Afiya&Co.">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jewelry.html">Jewelry</a>
+    <a href="flowers.html">Flowers & Gifts</a>
+    <a href="fashion.html">Fashion</a>
+    <a href="javascript:void(0)" id="drawerOpen">Cart</a>
+  </nav>
+</header>
+<div class="container">
+  <h1 class="section-title">Flowers & Gifts</h1>
+  <div class="scroller">
+    <article class="card" data-product data-id="g1" data-name="Pink Bouquet" data-price="259000" data-img="assets/img/bouquet_pink.webp">
+      <img src="assets/img/bouquet_pink.webp" loading="lazy" alt="Pink Bouquet">
+      <div class="info">
+        <div><strong>Pink Bouquet</strong></div>
+        <small class="muted">Bouquet mawar pink</small>
+        <div class="price">Rp 259,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="g2" data-name="Pastel Basket" data-price="459000" data-img="assets/img/bouquet_colorful.webp">
+      <img src="assets/img/bouquet_colorful.webp" loading="lazy" alt="Pastel Basket">
+      <div class="info">
+        <div><strong>Pastel Basket</strong></div>
+        <small class="muted">Keranjang bunga pastel</small>
+        <div class="price">Rp 459,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="g3" data-name="Classic White & Pink" data-price="329000" data-img="assets/img/bouquet_set.webp">
+      <img src="assets/img/bouquet_set.webp" loading="lazy" alt="Classic White & Pink">
+      <div class="info">
+        <div><strong>Classic White & Pink</strong></div>
+        <small class="muted">Mix lily & rose elegan</small>
+        <div class="price">Rp 329,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="g4" data-name="Table Bloom" data-price="189000" data-img="assets/img/bouquet_set.webp">
+      <img src="assets/img/bouquet_set.webp" loading="lazy" alt="Table Bloom">
+      <div class="info">
+        <div><strong>Table Bloom</strong></div>
+        <small class="muted">Dekorasi meja minimal</small>
+        <div class="price">Rp 189,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="g5" data-name="Tulip Love" data-price="289000" data-img="assets/img/bouquet_colorful.webp">
+      <img src="assets/img/bouquet_colorful.webp" loading="lazy" alt="Tulip Love">
+      <div class="info">
+        <div><strong>Tulip Love</strong></div>
+        <small class="muted">Tulip campur manis</small>
+        <div class="price">Rp 289,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    </div>
+</div>
+
+<div class="drawer">
+  <button id="drawerClose" class="btn" style="float:right">Tutup</button>
+  <h3>Keranjang</h3>
+  <div id="cartItems"></div>
+  <div class="cart-footer">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <strong>Total</strong>
+      <strong id="cartTotal">Rp 0</strong>
+    </div>
+    <button class="btn" style="width:100%;margin-top:.6rem" onclick="checkoutWA()">Checkout via WhatsApp</button>
+  </div>
+</div>
+
+<footer class="container">
+  <div class="address"><span class="badge">📍</span> <a target="_blank" href="https://maps.google.com/?q=Jl.+Bougenvil+No.15,+Jakarta">jl. bougenvil no.15, jakarta</a></div>
+  <small class="muted">© 2025 Afiya&Co.</small>
+</footer>
+<script src="assets/js/app.js"></script>
+</body></html>

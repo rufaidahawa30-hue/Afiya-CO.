@@ -1,0 +1,94 @@
+<!doctype html><html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fashion — Afiya&Co</title>
+<link rel="icon" href="assets/img/favicon.ico">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<header>
+  <div class="brand">
+    <img class="logo" src="assets/img/logo.webp" alt="Afiya Logo">
+    <img class="word" src="assets/svg/logo-word.svg" alt="Afiya&Co.">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jewelry.html">Jewelry</a>
+    <a href="flowers.html">Flowers & Gifts</a>
+    <a href="fashion.html">Fashion</a>
+    <a href="javascript:void(0)" id="drawerOpen">Cart</a>
+  </nav>
+</header>
+<div class="container">
+  <h1 class="section-title">Fashion</h1>
+  <div class="scroller">
+    <article class="card" data-product data-id="fa1" data-name="Kaliana Vest" data-price="549000" data-img="assets/img/dress_vest.webp">
+      <img src="assets/img/dress_vest.webp" loading="lazy" alt="Kaliana Vest">
+      <div class="info">
+        <div><strong>Kaliana Vest</strong></div>
+        <small class="muted">Vest premium Kaliana</small>
+        <div class="price">Rp 549,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="fa2" data-name="Narnia Set" data-price="799000" data-img="assets/img/set_narnia.webp">
+      <img src="assets/img/set_narnia.webp" loading="lazy" alt="Narnia Set">
+      <div class="info">
+        <div><strong>Narnia Set</strong></div>
+        <small class="muted">Set top & skirt Narnia</small>
+        <div class="price">Rp 799,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="fa3" data-name="Carine Vest" data-price="579000" data-img="assets/img/vest_carine.webp">
+      <img src="assets/img/vest_carine.webp" loading="lazy" alt="Carine Vest">
+      <div class="info">
+        <div><strong>Carine Vest</strong></div>
+        <small class="muted">Vest flora Carine</small>
+        <div class="price">Rp 579,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="fa4" data-name="Carine Vest (Alt)" data-price="579000" data-img="assets/img/vest_carine.webp">
+      <img src="assets/img/vest_carine.webp" loading="lazy" alt="Carine Vest (Alt)">
+      <div class="info">
+        <div><strong>Carine Vest (Alt)</strong></div>
+        <small class="muted">Varian warna lembut</small>
+        <div class="price">Rp 579,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="fa5" data-name="Narnia Skirt" data-price="459000" data-img="assets/img/set_narnia.webp">
+      <img src="assets/img/set_narnia.webp" loading="lazy" alt="Narnia Skirt">
+      <div class="info">
+        <div><strong>Narnia Skirt</strong></div>
+        <small class="muted">Rok layer graceful</small>
+        <div class="price">Rp 459,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    </div>
+</div>
+
+<div class="drawer">
+  <button id="drawerClose" class="btn" style="float:right">Tutup</button>
+  <h3>Keranjang</h3>
+  <div id="cartItems"></div>
+  <div class="cart-footer">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <strong>Total</strong>
+      <strong id="cartTotal">Rp 0</strong>
+    </div>
+    <button class="btn" style="width:100%;margin-top:.6rem" onclick="checkoutWA()">Checkout via WhatsApp</button>
+  </div>
+</div>
+
+<footer class="container">
+  <div class="address"><span class="badge">📍</span> <a target="_blank" href="https://maps.google.com/?q=Jl.+Bougenvil+No.15,+Jakarta">jl. bougenvil no.15, jakarta</a></div>
+  <small class="muted">© 2025 Afiya&Co.</small>
+</footer>
+<script src="assets/js/app.js"></script>
+</body></html>

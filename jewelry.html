@@ -1,0 +1,94 @@
+<!doctype html><html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jewelry — Afiya&Co</title>
+<link rel="icon" href="assets/img/favicon.ico">
+<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head><body>
+<header>
+  <div class="brand">
+    <img class="logo" src="assets/img/logo.webp" alt="Afiya Logo">
+    <img class="word" src="assets/svg/logo-word.svg" alt="Afiya&Co.">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="jewelry.html">Jewelry</a>
+    <a href="flowers.html">Flowers & Gifts</a>
+    <a href="fashion.html">Fashion</a>
+    <a href="javascript:void(0)" id="drawerOpen">Cart</a>
+  </nav>
+</header>
+<div class="container">
+  <h1 class="section-title">Jewelry</h1>
+  <div class="scroller">
+    <article class="card" data-product data-id="j1" data-name="Bracelet Watch Mix" data-price="399000" data-img="assets/img/watch_mixed.webp">
+      <img src="assets/img/watch_mixed.webp" loading="lazy" alt="Bracelet Watch Mix">
+      <div class="info">
+        <div><strong>Bracelet Watch Mix</strong></div>
+        <small class="muted">Jam gelang rose & charms</small>
+        <div class="price">Rp 399,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="j2" data-name="Birthstone Pendant" data-price="299000" data-img="assets/img/jewel_balance.webp">
+      <img src="assets/img/jewel_balance.webp" loading="lazy" alt="Birthstone Pendant">
+      <div class="info">
+        <div><strong>Birthstone Pendant</strong></div>
+        <small class="muted">Kalung batu kelahiran</small>
+        <div class="price">Rp 299,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="j3" data-name="Fairy Arm Cuff" data-price="259000" data-img="assets/img/armcuff.webp">
+      <img src="assets/img/armcuff.webp" loading="lazy" alt="Fairy Arm Cuff">
+      <div class="info">
+        <div><strong>Fairy Arm Cuff</strong></div>
+        <small class="muted">Cuff kristal fairy garden</small>
+        <div class="price">Rp 259,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="j4" data-name="Rose Quartz Ring" data-price="199000" data-img="assets/img/jewel_balance.webp">
+      <img src="assets/img/jewel_balance.webp" loading="lazy" alt="Rose Quartz Ring">
+      <div class="info">
+        <div><strong>Rose Quartz Ring</strong></div>
+        <small class="muted">Cincin rose quartz minimal</small>
+        <div class="price">Rp 199,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    
+    <article class="card" data-product data-id="j5" data-name="Pearl & Charm Bracelet" data-price="219000" data-img="assets/img/watch_mixed.webp">
+      <img src="assets/img/watch_mixed.webp" loading="lazy" alt="Pearl & Charm Bracelet">
+      <div class="info">
+        <div><strong>Pearl & Charm Bracelet</strong></div>
+        <small class="muted">Gelang mutiara & charm</small>
+        <div class="price">Rp 219,000</div>
+        <button class="btn add" data-atc>Tambah ke Keranjang</button>
+      </div>
+    </article>
+    </div>
+</div>
+
+<div class="drawer">
+  <button id="drawerClose" class="btn" style="float:right">Tutup</button>
+  <h3>Keranjang</h3>
+  <div id="cartItems"></div>
+  <div class="cart-footer">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <strong>Total</strong>
+      <strong id="cartTotal">Rp 0</strong>
+    </div>
+    <button class="btn" style="width:100%;margin-top:.6rem" onclick="checkoutWA()">Checkout via WhatsApp</button>
+  </div>
+</div>
+
+<footer class="container">
+  <div class="address"><span class="badge">📍</span> <a target="_blank" href="https://maps.google.com/?q=Jl.+Bougenvil+No.15,+Jakarta">jl. bougenvil no.15, jakarta</a></div>
+  <small class="muted">© 2025 Afiya&Co.</small>
+</footer>
+<script src="assets/js/app.js"></script>
+</body></html>

@@ -1,0 +1,9 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120">
+  <style>
+    .word{font-family:'Playfair Display',serif;font-weight:700;font-size:64px;fill:#8f5a61;letter-spacing:3px}
+    .and{font-family:'Poppins',sans-serif;font-weight:500;font-size:28px;fill:#c28b94}
+  </style>
+  <text x="0" y="75" class="word">Afiya</text>
+  <text x="205" y="75" class="and">&amp; Co.</text>
+</svg>
