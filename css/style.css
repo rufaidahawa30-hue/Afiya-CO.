@@ -1,0 +1,56 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fffafc;
+  color: #444;
+}
+header {
+  background: linear-gradient(90deg, #f5e1e9, #fad0c4);
+  padding: 1rem;
+  text-align: center;
+}
+nav a {
+  margin: 0 1rem;
+  color: #b76e79;
+  text-decoration: none;
+  font-weight: bold;
+}
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  width: 500%;
+  animation: slide 15s infinite;
+}
+.slides img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+@keyframes slide {
+  0% {transform: translateX(0%);}
+  20% {transform: translateX(0%);}
+  25% {transform: translateX(-100%);}
+  45% {transform: translateX(-100%);}
+  50% {transform: translateX(-200%);}
+  70% {transform: translateX(-200%);}
+  75% {transform: translateX(-300%);}
+  95% {transform: translateX(-300%);}
+  100% {transform: translateX(-400%);}
+}
+.cart-drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  padding: 1rem;
+  display: none;
+}
